@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "@prisma/client": "^6.2.0",
+    "@prisma/client": "^6.2.1",
     "@shopify/shopify-api": "^11.7.0",
     "axios": "^1.7.9",
     "cors": "^2.8.5",
@@ -11,6 +11,6 @@
   },
   "devDependencies": {
     "nodemon": "^3.1.9",
-    "prisma": "^6.2.0"
+    "prisma": "^6.2.1"
   }
 }

@@ -38,7 +38,7 @@ const sendOrderEmail = async(recipient,orderDetails) => {
 
 const orderWebhookHandler = async (req, res) => {
     try {
-      
+      console.log("hi there");
       console.log("Webhook received:", req.body);
     
       
@@ -56,7 +56,7 @@ const orderWebhookHandler = async (req, res) => {
       const emailId = await sendOrderEmail(email, orderDetails);
   
       
-      res.status(200).json({ message: "Webhook handled and email sent", emailId });
+      return res.status(200).json({ message: "Webhook handled and email sent", emailId });
     } catch (error) {
       console.error("Error handling webhook:", error);
       res.status(500).json({ error: "Webhook handling failed" });
